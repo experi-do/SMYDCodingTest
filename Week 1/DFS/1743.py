@@ -1,6 +1,6 @@
 from typing import List
 import sys
-#sys.setrecursionlimit(10**5)
+sys.setrecursionlimit(10**5)
 class Solution1743:
 
     grid : List[List[str]]
@@ -26,7 +26,7 @@ class Solution1743:
     def sizeTrash(self):
         if not self.grid:
             return 0
-        count = 0
+
         for i in range(len(self.grid)):
             for j in range(len(self.grid[0])):
                 if self.grid[i][j] == '1':
