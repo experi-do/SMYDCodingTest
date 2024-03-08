@@ -76,6 +76,3 @@ while (dir != -1):
     cnt = cnt + plus
 
 print(cnt)
-
-
-

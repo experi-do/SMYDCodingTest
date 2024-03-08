@@ -1,7 +1,7 @@
 from typing import List
 from collections import deque
 
-class Solution14503:
+class Solution14716:
 
     grid: [List[List[str]]]
     dx = [-1, 1, 0, 0, -1, 1, -1, 1]
@@ -47,7 +47,7 @@ for i in range(m):
     small_grid = input().split(' ')
     grid.append(small_grid)
 
-solution = Solution14503()
+solution = Solution14716()
 solution.grid = grid
 result = solution.letter_count()
 print(result)
