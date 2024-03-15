@@ -1,9 +1,11 @@
+# 높은 자릿수부터 탐색하면서 현재 자릿수가 이전 자릿수보다 크면 이전 자릿수는 pass
+
 import sys
 input = sys.stdin.readline
 
 n, k = map(int, input().split(' '))
-c_list = input()
-num_list = []
-for i in range(len(c_list)-1):
-    num_list.append(int(c_list[i]))
-print(num_list)
+num = list(map(int, input().split(' ')))
+
+result=[0 for _ in range(n-k)]
+cnt = 0
+for i in range(num):
