@@ -26,3 +26,10 @@
 
  <p>첫째 줄에는 그림의 개수, 둘째 줄에는 그 중 가장 넓은 그림의 넓이를 출력하여라. 단, 그림이 하나도 없는 경우에는 가장 넓은 그림의 넓이는 0이다.</p>
 
+ ### What I Learned
+ <p>1. n, m = map(int, input().split())</p>
+ <p>2. grid = [list(map(int, input().split())) for _ in range(n)]</p>
+ <p>3. bfs -> queue / dfs -> stack</p>
+ <p>4. 이중 for문 -> grid[i][j] == 1 && visited[i][j] == False -> bfs()</p>
+ <p>5. bfs: 4 방향의 좌표들을 큐에 넣고 조건 확인 과정을 while not q.empty() 동안 반복</p>
+ <p>6. from collections import deque</p>
