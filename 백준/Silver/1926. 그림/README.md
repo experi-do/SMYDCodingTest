@@ -33,3 +33,5 @@
  <p>4. 이중 for문 -> grid[i][j] == 1 && visited[i][j] == False -> bfs()</p>
  <p>5. bfs: 4 방향의 좌표들을 큐에 넣고 조건 확인 과정을 while not q.empty() 동안 반복</p>
  <p>6. from collections import deque</p>
+ <p>7. 출발~도착 path의 최소 거리 구하기 == 도착점이 몇 대 후손인지(Graph의 높이) -> visited가 True라는 것은 이미 이전에 방문 == 더 작은 Graph의 높이</p>
+ <p>8. loop가 있으면 dfs로는 도착점에서 멈추지 않기 때문에 bfs로 해결</p>
