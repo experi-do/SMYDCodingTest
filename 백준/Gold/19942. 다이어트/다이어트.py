@@ -23,8 +23,7 @@ def dfs(start, p, f, s, v, cost, pick):
             if best_pick is None or pick < best_pick:
                 best_pick = pick[:]
         return
-
-    # 조합 탐색: i는 항상 증가 → 순열 중복 제거
+        
     for i in range(start, n):
         pi, fi, si, vi, ci = grid[i]
         dfs(i + 1, p + pi, f + fi, s + si, v + vi, cost + ci, pick + [i])
@@ -35,5 +34,5 @@ if best_cost == float('inf'):
     print(-1)
 else:
     print(best_cost)
-    # 문제에 따라 1-based 출력
     print(*[x+1 for x in best_pick])
+
