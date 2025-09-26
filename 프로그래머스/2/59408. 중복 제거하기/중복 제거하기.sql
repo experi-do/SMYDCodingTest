@@ -1,0 +1,4 @@
+-- 동물 보호소에 들어온 동물의 이름은 몇 개인지 조회하는 SQL 문을 작성
+SELECT COUNT(DISTINCT(A.NAME))
+FROM ANIMAL_INS A
+WHERE A.NAME IS NOT NULL;
